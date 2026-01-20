@@ -1,0 +1,1446 @@
+{
+  "comment": "This file contains a ForNAV custom layout. This file cannot be changed manually.",
+  "reportId": 6188472,
+  "layoutName": "6188472-000001",
+  "description": "Kopi af Built-In Layout",
+  "layout": {
+    "@ReportUnit": "TenthsOfAMillimeter",
+    "@Margins": "300, 100, 200, 200",
+    "@Dpi": "254",
+    "@Font": "Segoe UI, 8pt",
+    "@UsageCategory": "ReportsAndAnalysis",
+    "@ReqSaveValues": "true",
+    "@ObjectName": "Report 6188472",
+    "Bands": {
+      "Header": {
+        "@ControlType": "DataItem",
+        "@Name": "Header",
+        "@Dpi": "254",
+        "@CalcFields": "\"Amount Including VAT\", Amount",
+        "@NewPagePerRecord": "true",
+        "@Id": "2",
+        "@TotalFields": "60,61",
+        "@ResetPageNumber": "true",
+        "@TotalColumns": "Header$Amount,Header$AmountIncludingVAT",
+        "@ReqFilterFields": "\"No.\",\"Posting Date\"",
+        "@DataItemTableView": "SORTING(\"No.\")",
+        "@DataItemTable": "Table112",
+        "@DataItemVarName": "Header",
+        "@GroupTotalFieldNames": "\"No.\"",
+        "@GroupTotalFields": "\"3\"",
+        "Bands": {
+          "DocumentHeader": {
+            "@ControlType": "Header",
+            "@Name": "DocumentHeader",
+            "@BackColor": "Transparent",
+            "@Dpi": "254",
+            "@Signature": "abc",
+            "@AllowScriptErrors": "true",
+            "@PrintOnEveryPage": "true",
+            "@Height": "830.0001",
+            "Controls": {
+              "Header_DueDate": {
+                "@Name": "Header_DueDate",
+                "@ControlType": "TextBox",
+                "@Size": "380.000244,59.99994",
+                "@Location": "1319.99988,679.9998",
+                "@Dpi": "254",
+                "@Font": "Segoe UI, 8pt",
+                "@ForeColor": "Black",
+                "@HorzAlign": "Right",
+                "@SourceExpression": "Header.DueDate"
+              },
+              "CurrReport_StandardCaptions_Copy": {
+                "@Name": "CurrReport_StandardCaptions_Copy",
+                "@ControlType": "TextBox",
+                "@Size": "400,60",
+                "@Location": "0,560",
+                "@Dpi": "254",
+                "@Font": "Segoe UI, 8pt",
+                "@SourceExpression": "CurrReport.StandardCaptions.Copy"
+              },
+              "Header_FieldLookups_PaymentTermsDescription": {
+                "@Name": "Header_FieldLookups_PaymentTermsDescription",
+                "@ControlType": "TextBox",
+                "@Size": "380,60.0001221",
+                "@Location": "1320,739.999756",
+                "@Dpi": "254",
+                "@Font": "Segoe UI, 8pt",
+                "@ForeColor": "Black",
+                "@HorzAlign": "Right",
+                "@SourceExpression": "Header.FieldLookups.PaymentTermsDescription"
+              },
+              "Header_FieldLookups_PaymentTermsCaption": {
+                "@Name": "Header_FieldLookups_PaymentTermsCaption",
+                "@ControlType": "TextBox",
+                "@Size": "320.000061,60.00006",
+                "@Location": "1000,739.9999",
+                "@Dpi": "254",
+                "@Font": "Segoe UI, 8pt, style=Bold",
+                "@ForeColor": "Black",
+                "@SourceExpression": "Header.FieldLookups.PaymentTermsCaption"
+              },
+              "Header_FieldCaptions_DueDate": {
+                "@Name": "Header_FieldCaptions_DueDate",
+                "@ControlType": "TextBox",
+                "@Size": "320.000061,60",
+                "@Location": "1000,679.9998",
+                "@Dpi": "254",
+                "@Font": "Segoe UI, 8pt, style=Bold",
+                "@ForeColor": "Black",
+                "@SourceExpression": "Header.FieldCaptions.DueDate"
+              },
+              "Header_FieldCaptions_DocumentDate": {
+                "@Name": "Header_FieldCaptions_DocumentDate",
+                "@ControlType": "TextBox",
+                "@Size": "320,60",
+                "@Location": "1000,619.999939",
+                "@Dpi": "254",
+                "@Font": "Segoe UI, 8pt, style=Bold",
+                "@ForeColor": "Black",
+                "@SourceExpression": "Header.FieldCaptions.DocumentDate"
+              },
+              "Header_FieldCaptions_OrderNo": {
+                "@Name": "Header_FieldCaptions_OrderNo",
+                "@ControlType": "TextBox",
+                "@Size": "320,60",
+                "@Location": "0,739.9999",
+                "@Dpi": "254",
+                "@Font": "Segoe UI, 8pt, style=Bold",
+                "@ForeColor": "Black",
+                "@ShowOutput": "Header.OrderNo!=''",
+                "@SourceExpression": "Header.FieldCaptions.OrderNo"
+              },
+              "Header_FieldCaptions_VATRegistrationNo": {
+                "@Name": "Header_FieldCaptions_VATRegistrationNo",
+                "@ControlType": "TextBox",
+                "@Size": "320,60",
+                "@Location": "0,679.9998",
+                "@Dpi": "254",
+                "@Font": "Segoe UI, 8pt, style=Bold",
+                "@ForeColor": "Black",
+                "@ShowOutput": "Header.VATRegistrationNo != ''",
+                "@SourceExpression": "Header.FieldCaptions.VATRegistrationNo"
+              },
+              "Header_FieldLookups_CustomerCaption": {
+                "@Name": "Header_FieldLookups_CustomerCaption",
+                "@ControlType": "TextBox",
+                "@Size": "320,60",
+                "@Location": "0,619.999939",
+                "@Dpi": "254",
+                "@Font": "Segoe UI, 8pt, style=Bold",
+                "@ForeColor": "Black",
+                "@SourceExpression": "Header.FieldLookups.CustomerCaption"
+              },
+              "Header_FieldGroups_Bill_toAddress": {
+                "@Name": "Header_FieldGroups_Bill_toAddress",
+                "@ControlType": "TextBox",
+                "@Size": "400,220.003281",
+                "@Location": "0,159.996689",
+                "@Dpi": "254",
+                "@Font": "Segoe UI, 8pt",
+                "@ForeColor": "Black",
+                "@BackColor": "255,255,192,192",
+                "@VertAlign": "Top",
+                "@HorzAlign": "Left",
+                "@MultiLine": "true",
+                "@SourceExpression": "Header.FieldGroups.Bill_toAddress",
+                "@CanGrow": "true"
+              },
+              "CompanyInformation_FieldGroups_Address": {
+                "@Name": "CompanyInformation_FieldGroups_Address",
+                "@ControlType": "TextBox",
+                "@Size": "400,220.003281",
+                "@Location": "1300.00012,159.996689",
+                "@Dpi": "254",
+                "@Font": "Segoe UI, 8pt",
+                "@ForeColor": "Black",
+                "@VertAlign": "Top",
+                "@HorzAlign": "Right",
+                "@ShowOutput": "CurrReport.PrintLogo(ForNAVSetup.UsePreprintedPaper)",
+                "@MultiLine": "true",
+                "@SourceExpression": "CompanyInformation.FieldGroups.Address"
+              },
+              "CurrReport_Caption": {
+                "@Name": "CurrReport_Caption",
+                "@ControlType": "TextBox",
+                "@Size": "1000,60",
+                "@Location": "0,500",
+                "@Dpi": "254",
+                "@Font": "Segoe UI, 10pt, style=Bold",
+                "@ForeColor": "Black",
+                "@HorzAlign": "Left",
+                "@SourceExpression": "CurrReport.Caption + ': ' + Header.No"
+              },
+              "CompanyInformation_Picture": {
+                "@Name": "CompanyInformation_Picture",
+                "@ControlType": "PictureBox",
+                "@Dpi": "254",
+                "@Size": "700,159.996658",
+                "@ShowOutput": "CurrReport.PrintLogo(ForNAVSetup.UsePreprintedPaper)",
+                "@SourceExpression": "ForNAVSetup.Logo",
+                "@HorzAlign": "Right",
+                "@Sizing": "ZoomImage",
+                "@Location": "1000,0"
+              },
+              "CurrReport_Page": {
+                "@Name": "CurrReport_Page",
+                "@ControlType": "TextBox",
+                "@Size": "200,60",
+                "@Location": "1500,500",
+                "@Dpi": "254",
+                "@Font": "Segoe UI, 8pt",
+                "@ForeColor": "Black",
+                "@HorzAlign": "Right",
+                "@SourceExpression": "CurrReport.Page"
+              },
+              "Header_Bill_toCustomerNo": {
+                "@Name": "Header_Bill_toCustomerNo",
+                "@ControlType": "TextBox",
+                "@Size": "450,60",
+                "@Location": "320,619.999939",
+                "@Dpi": "254",
+                "@Font": "Segoe UI, 8pt",
+                "@ForeColor": "Black",
+                "@HorzAlign": "Right",
+                "@SourceExpression": "Header.Bill_toCustomerNo"
+              },
+              "Header_FieldGroups_Bill_toAddress4": {
+                "@Name": "Header_FieldGroups_Bill_toAddress4",
+                "@ControlType": "TextBox",
+                "@Size": "450.000061,60",
+                "@Location": "320,679.9998",
+                "@Dpi": "254",
+                "@Font": "Segoe UI, 8pt",
+                "@ForeColor": "Black",
+                "@HorzAlign": "Right",
+                "@SourceExpression": "Header.VATRegistrationNo"
+              },
+              "Header_FieldGroups_Bill_toAddress8": {
+                "@Name": "Header_FieldGroups_Bill_toAddress8",
+                "@ControlType": "TextBox",
+                "@Size": "449.9999,60.00006",
+                "@Location": "320.000183,740.000061",
+                "@Dpi": "254",
+                "@Font": "Segoe UI, 8pt",
+                "@ForeColor": "Black",
+                "@HorzAlign": "Right",
+                "@SourceExpression": "Header.OrderNo"
+              },
+              "Header_DocumentDate": {
+                "@Name": "Header_DocumentDate",
+                "@ControlType": "TextBox",
+                "@Size": "380.000244,59.99994",
+                "@Location": "1319.99951,619.999939",
+                "@Dpi": "254",
+                "@Font": "Segoe UI, 8pt",
+                "@ForeColor": "Black",
+                "@HorzAlign": "Right",
+                "@SourceExpression": "Header.DocumentDate"
+              }
+            }
+          },
+          "Footer": {
+            "@ControlType": "Footer",
+            "@Name": "Footer",
+            "@Dpi": "254",
+            "@BackColor": "Beige",
+            "@Padding": "0,0,0,0,254",
+            "@MasterSection": "ForNAV Sales Template,Footer",
+            "@PrintOnEveryPage": "true",
+            "@PlaceInBottom": "true",
+            "@Signature": "abc",
+            "@Height": "250",
+            "Controls": {
+              "Header_FieldGroups_Bill_toAddress6": {
+                "@Name": "Header_FieldGroups_Bill_toAddress6",
+                "@ControlType": "TextBox",
+                "@Size": "1700,140",
+                "@Location": "0,0",
+                "@Dpi": "254",
+                "@Font": "Segoe UI, 8pt",
+                "@HorzAlign": "Center",
+                "@ShowOutput": "CurrReport.PrintLogo(ForNAVSetup.UsePreprintedPaper)",
+                "@MultiLine": "true",
+                "@SourceExpression": [
+                  "var joinFormat = ' : ';",
+                  "CurrReport.JoinStrings(' | ',",
+                  "CompanyInformation.FieldExtensions.PhoneNo.Format(joinFormat), ",
+                  "CompanyInformation.FieldExtensions.E_Mail.Format(joinFormat), ",
+                  "CompanyInformation.FieldExtensions.HomePage.Format(joinFormat), ",
+                  "CompanyInformation.FieldExtensions.VATRegistrationNo.Format(joinFormat),",
+                  "BankAccount.FieldExtensions.IBAN.Format(joinFormat), ",
+                  "BankAccount.FieldExtensions.SWIFTCode.Format(joinFormat))"
+                ]
+              },
+              "CompanyInformation_FieldGroups_Address2": {
+                "@Name": "CompanyInformation_FieldGroups_Address2",
+                "@ControlType": "TextBox",
+                "@Size": "1700,60",
+                "@Location": "0,190",
+                "@Dpi": "254",
+                "@Font": "Segoe UI, 6pt, style=Italic",
+                "@HorzAlign": "Center",
+                "@ShowOutput": "CurrReport.PrintLogo(ForNAVSetup.UsePreprintedPaper)",
+                "@SourceExpression": "ForNAVSetup.LegalConditions"
+              }
+            }
+          },
+          "HeaderPreText": {
+            "@ControlType": "DataItem",
+            "@Name": "HeaderPreText",
+            "@Dpi": "254",
+            "@CalcFields": "Text",
+            "@Populate": "true",
+            "@Temporary": "true",
+            "@Predeccessor": "Header",
+            "@Id": "1000000003",
+            "@IsVirtual": "true",
+            "@ExistsOnlyInLayout": "true",
+            "@DataItemTableView": "WHERE(Type=CONST(PRE))",
+            "@DataItemTable": "Table6188537",
+            "Bands": {
+              "HeaderPreBody": {
+                "@ControlType": "Body",
+                "@Name": "HeaderPreBody",
+                "@BackColor": "Transparent",
+                "@Dpi": "254",
+                "@CanGrow": "true",
+                "@Height": "58.42",
+                "Controls": {
+                  "TextBoxHeaderPreText": {
+                    "@Name": "TextBoxHeaderPreText",
+                    "@ControlType": "TextBox",
+                    "@Size": "1700,58.42",
+                    "@Location": "0,0",
+                    "@Dpi": "254",
+                    "@VertAlign": "Top",
+                    "@HorzAlign": "Left",
+                    "@MultiLine": "true",
+                    "@SourceExpression": "HeaderPreText.Text",
+                    "@CanGrow": "true"
+                  }
+                }
+              }
+            },
+            "Fields": {
+              "Text": {
+                "@FieldName": "Text",
+                "@FieldNo": "20"
+              }
+            }
+          },
+          "Line": {
+            "@ControlType": "DataItem",
+            "@Name": "Line",
+            "@Dpi": "254",
+            "@Id": "3",
+            "@TotalFields": "29",
+            "@TotalColumns": "Line$Amount",
+            "@DataItemLink": "\"Document No.\" = FIELD(\"No.\")",
+            "@DataItemLinkReference": "Header",
+            "@DataItemTableView": "SORTING(\"Document No.\", \"Line No.\")",
+            "@DataItemTable": "Table113",
+            "@DataItemVarName": "Line",
+            "Bands": {
+              "LinesBody": {
+                "@ControlType": "Body",
+                "@Name": "LinesBody",
+                "@BackColor": "Beige",
+                "@Dpi": "254",
+                "@Signature": "abc",
+                "@MasterSection": "ForNAV Sales Template,LinesBody",
+                "@CanGrow": "true",
+                "@Height": "60",
+                "Controls": {
+                  "LinesTable": {
+                    "@Name": "LinesTable",
+                    "@ControlType": "Table",
+                    "@Size": "1700,60",
+                    "@Location": "2.33317566,0",
+                    "@Dpi": "254",
+                    "Rows": {
+                      "LinesRow": {
+                        "@Name": "LinesRow",
+                        "@ControlType": "TableRow",
+                        "@Dpi": "254",
+                        "@Weight": "0.5679012345679012",
+                        "Cells": {
+                          "Line_No": {
+                            "@Name": "Line_No",
+                            "@ControlType": "TableCell",
+                            "@Font": "Segoe UI, 8pt",
+                            "@Dpi": "254",
+                            "@Weight": "0.59682747602293285",
+                            "@SourceExpression": "Line.No",
+                            "@VertAlign": "Top",
+                            "@HorzAlign": "Left",
+                            "@ShowOutput": "Line.Type == Line.FieldOptions.Type.Item"
+                          },
+                          "Line_Description": {
+                            "@Name": "Line_Description",
+                            "@ControlType": "TableCell",
+                            "@Font": "Segoe UI, 8pt",
+                            "@Dpi": "254",
+                            "@Weight": "2.586252311689746",
+                            "@MultiLine": "true",
+                            "@SourceExpression": "Line.Description",
+                            "@VertAlign": "Top",
+                            "@HorzAlign": "Left",
+                            "@CanGrow": "true"
+                          },
+                          "Line_Quantity": {
+                            "@Name": "Line_Quantity",
+                            "@ControlType": "TableCell",
+                            "@Font": "Segoe UI, 8pt",
+                            "@Dpi": "254",
+                            "@Weight": "0.59682747434681971",
+                            "@BlankZero": "true",
+                            "@SourceExpression": "Line.Quantity",
+                            "@VertAlign": "Top",
+                            "@HorzAlign": "Right"
+                          },
+                          "Line_UnitofMeasure": {
+                            "@Name": "Line_UnitofMeasure",
+                            "@ControlType": "TableCell",
+                            "@Font": "Segoe UI, 8pt",
+                            "@Dpi": "254",
+                            "@Weight": "0.59682750369681714",
+                            "@SourceExpression": "Line.UnitofMeasure",
+                            "@VertAlign": "Top",
+                            "@HorzAlign": "Right"
+                          },
+                          "Line_LineDiscountPct": {
+                            "@Name": "Line_LineDiscountPct",
+                            "@ControlType": "TableCell",
+                            "@Font": "Segoe UI, 8pt",
+                            "@Dpi": "254",
+                            "@Weight": "0.59682747368855438",
+                            "@BlankZero": "true",
+                            "@SourceExpression": "Line.LineDiscountPct",
+                            "@VertAlign": "Top",
+                            "@HorzAlign": "Right",
+                            "@ShowOutput": "DynamicsNavDataSet.HasDiscount"
+                          },
+                          "Line_UnitPrice": {
+                            "@Name": "Line_UnitPrice",
+                            "@ControlType": "TableCell",
+                            "@Font": "Segoe UI, 8pt",
+                            "@Dpi": "254",
+                            "@Weight": "0.59682747770915978",
+                            "@BlankZero": "true",
+                            "@SourceExpression": "Line.UnitPrice",
+                            "@VertAlign": "Top",
+                            "@HorzAlign": "Right"
+                          },
+                          "Line_Amount": {
+                            "@Name": "Line_Amount",
+                            "@ControlType": "TableCell",
+                            "@Font": "Segoe UI, 8pt",
+                            "@Dpi": "254",
+                            "@Weight": "1.1936550824200196",
+                            "@BlankZero": "true",
+                            "@SourceExpression": "Line.Amount",
+                            "@VertAlign": "Top",
+                            "@HorzAlign": "Right"
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "LinesHeader": {
+                "@ControlType": "Header",
+                "@Name": "LinesHeader",
+                "@BackColor": "Beige",
+                "@Dpi": "254",
+                "@Signature": "abc",
+                "@MasterSection": "ForNAV Sales Template,LinesHeader",
+                "@Height": "110",
+                "Controls": {
+                  "LinesHeaderTable": {
+                    "@Name": "LinesHeaderTable",
+                    "@ControlType": "Table",
+                    "@Size": "1700,100",
+                    "@Location": "0,0",
+                    "@Dpi": "254",
+                    "@Borders": "Bottom",
+                    "Rows": {
+                      "LinesHeaderRow": {
+                        "@Name": "LinesHeaderRow",
+                        "@ControlType": "TableRow",
+                        "@Dpi": "254",
+                        "@Weight": "0.5679012345679012",
+                        "@AutoFit": "true",
+                        "Cells": {
+                          "Line_FieldCaptions_No_LinesHeader": {
+                            "@Name": "Line_FieldCaptions_No_LinesHeader",
+                            "@ControlType": "TableCell",
+                            "@Borders": "Bottom",
+                            "@Font": "Segoe UI, 8pt, style=Bold",
+                            "@Dpi": "254",
+                            "@Weight": "6.8042907956339436",
+                            "@MultiLine": "true",
+                            "@SourceExpression": "Line.FieldCaptions.No",
+                            "@VertAlign": "Bottom",
+                            "@HorzAlign": "Left"
+                          },
+                          "Line_FieldCaptions_Description_LinesHeader": {
+                            "@Name": "Line_FieldCaptions_Description_LinesHeader",
+                            "@ControlType": "TableCell",
+                            "@Font": "Segoe UI, 8pt, style=Bold",
+                            "@Dpi": "254",
+                            "@Weight": "29.485258864392023",
+                            "@MultiLine": "true",
+                            "@SourceExpression": "Line.FieldCaptions.Description",
+                            "@VertAlign": "Bottom",
+                            "@HorzAlign": "Left"
+                          },
+                          "Line_FieldCaptions_Quantity_LinesHeader": {
+                            "@Name": "Line_FieldCaptions_Quantity_LinesHeader",
+                            "@ControlType": "TableCell",
+                            "@Font": "Segoe UI, 8pt, style=Bold",
+                            "@Dpi": "254",
+                            "@Weight": "6.804290391100233",
+                            "@MultiLine": "true",
+                            "@SourceExpression": "Line.FieldCaptions.Quantity",
+                            "@VertAlign": "Bottom",
+                            "@HorzAlign": "Right",
+                            "@CanShrink": "true"
+                          },
+                          "Line_FieldCaptions_UnitOfMeasure_LinesHeader": {
+                            "@Name": "Line_FieldCaptions_UnitOfMeasure_LinesHeader",
+                            "@ControlType": "TableCell",
+                            "@Font": "Segoe UI, 8pt, style=Bold",
+                            "@Dpi": "254",
+                            "@Weight": "6.8042906150612019",
+                            "@MultiLine": "true",
+                            "@SourceExpression": "Line.FieldCaptions.UnitofMeasure",
+                            "@VertAlign": "Bottom",
+                            "@HorzAlign": "Right",
+                            "@CanShrink": "true"
+                          },
+                          "Line_FieldCaptions_LineDiscountPct_LinesHeader": {
+                            "@Name": "Line_FieldCaptions_LineDiscountPct_LinesHeader",
+                            "@ControlType": "TableCell",
+                            "@ForeColor": "Black",
+                            "@Font": "Segoe UI, 8pt, style=Bold",
+                            "@Dpi": "254",
+                            "@Weight": "6.8042905812143442",
+                            "@MultiLine": "true",
+                            "@SourceExpression": "Line.FieldCaptions.LineDiscountPct",
+                            "@VertAlign": "Bottom",
+                            "@HorzAlign": "Right",
+                            "@ShowOutput": "DynamicsNavDataSet.HasDiscount"
+                          },
+                          "Line_FieldCaptions_UnitPrice_LinesHeader": {
+                            "@Name": "Line_FieldCaptions_UnitPrice_LinesHeader",
+                            "@ControlType": "TableCell",
+                            "@ForeColor": "Black",
+                            "@Font": "Segoe UI, 8pt, style=Bold",
+                            "@Dpi": "254",
+                            "@Weight": "6.8042905046477546",
+                            "@MultiLine": "true",
+                            "@SourceExpression": "Line.FieldCaptions.UnitPrice",
+                            "@VertAlign": "Bottom",
+                            "@HorzAlign": "Right",
+                            "@CanShrink": "true"
+                          },
+                          "Line_FieldCaptions_Amount_LinesHeader_LinesHeader": {
+                            "@Name": "Line_FieldCaptions_Amount_LinesHeader_LinesHeader",
+                            "@ControlType": "TableCell",
+                            "@Font": "Segoe UI, 8pt, style=Bold",
+                            "@Dpi": "254",
+                            "@Weight": "13.608581111821286",
+                            "@MultiLine": "true",
+                            "@SourceExpression": "Line.FieldCaptions.Amount + ' (' + Header.FieldLookups.CurrencyCode + ')'",
+                            "@VertAlign": "Bottom",
+                            "@HorzAlign": "Right"
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "TransHeader": {
+                "@ControlType": "TransHeader",
+                "@Name": "TransHeader",
+                "@Dpi": "254",
+                "@BackColor": "Beige",
+                "@MasterSection": "ForNAV Sales Template,TransHeader",
+                "@Signature": "abc",
+                "@Height": "160",
+                "Controls": {
+                  "TransHeaderTable": {
+                    "@Name": "TransHeaderTable",
+                    "@ControlType": "Table",
+                    "@Size": "1700,100",
+                    "@Location": "0,0",
+                    "@Dpi": "254",
+                    "@Borders": "Bottom",
+                    "Rows": {
+                      "TransHeaderRow": {
+                        "@Name": "TransHeaderRow",
+                        "@ControlType": "TableRow",
+                        "@Dpi": "254",
+                        "@Weight": "0.5679012345679012",
+                        "@AutoFit": "true",
+                        "Cells": {
+                          "Line_FieldCaptions_No_TransHeader": {
+                            "@Name": "Line_FieldCaptions_No_TransHeader",
+                            "@ControlType": "TableCell",
+                            "@Font": "Segoe UI, 8pt, style=Bold",
+                            "@Dpi": "254",
+                            "@Weight": "6.8042901034657159",
+                            "@MultiLine": "true",
+                            "@SourceExpression": "Line.FieldCaptions.No",
+                            "@VertAlign": "Bottom",
+                            "@HorzAlign": "Left"
+                          },
+                          "Line_FieldCaptions_Description_TransHeader": {
+                            "@Name": "Line_FieldCaptions_Description_TransHeader",
+                            "@ControlType": "TableCell",
+                            "@Font": "Segoe UI, 8pt, style=Bold",
+                            "@Dpi": "254",
+                            "@Weight": "29.485256787887341",
+                            "@MultiLine": "true",
+                            "@SourceExpression": "Line.FieldCaptions.Description",
+                            "@VertAlign": "Bottom",
+                            "@HorzAlign": "Left"
+                          },
+                          "Line_FieldCaptions_Quantity_TransHeader": {
+                            "@Name": "Line_FieldCaptions_Quantity_TransHeader",
+                            "@ControlType": "TableCell",
+                            "@Font": "Segoe UI, 8pt, style=Bold",
+                            "@Dpi": "254",
+                            "@Weight": "6.804290391100233",
+                            "@MultiLine": "true",
+                            "@SourceExpression": "Line.FieldCaptions.Quantity",
+                            "@VertAlign": "Bottom",
+                            "@HorzAlign": "Right"
+                          },
+                          "Line_FieldCaptions_UnitofMeasure_TransHeader": {
+                            "@Name": "Line_FieldCaptions_UnitofMeasure_TransHeader",
+                            "@ControlType": "TableCell",
+                            "@Font": "Segoe UI, 8pt, style=Bold",
+                            "@Dpi": "254",
+                            "@Weight": "6.804290615061201",
+                            "@MultiLine": "true",
+                            "@SourceExpression": "Line.FieldCaptions.UnitofMeasure",
+                            "@VertAlign": "Bottom",
+                            "@HorzAlign": "Right"
+                          },
+                          "Line_FieldCaptions_LineDiscountPct_TransHeader": {
+                            "@Name": "Line_FieldCaptions_LineDiscountPct_TransHeader",
+                            "@ControlType": "TableCell",
+                            "@ForeColor": "Black",
+                            "@Font": "Segoe UI, 8pt, style=Bold",
+                            "@Dpi": "254",
+                            "@Weight": "6.804290581214345",
+                            "@MultiLine": "true",
+                            "@SourceExpression": "Line.FieldCaptions.LineDiscountPct",
+                            "@VertAlign": "Bottom",
+                            "@HorzAlign": "Right",
+                            "@ShowOutput": "DynamicsNavDataSet.HasDiscount"
+                          },
+                          "Line_FieldCaptions_UnitPrice_TransHeader": {
+                            "@Name": "Line_FieldCaptions_UnitPrice_TransHeader",
+                            "@ControlType": "TableCell",
+                            "@ForeColor": "Black",
+                            "@Font": "Segoe UI, 8pt, style=Bold",
+                            "@Dpi": "254",
+                            "@Weight": "6.8042905046477546",
+                            "@MultiLine": "true",
+                            "@SourceExpression": "Line.FieldCaptions.UnitPrice",
+                            "@VertAlign": "Bottom",
+                            "@HorzAlign": "Right",
+                            "@CanShrink": "true"
+                          },
+                          "Line_No0": {
+                            "@Name": "Line_No0",
+                            "@ControlType": "TableCell",
+                            "@Font": "Segoe UI, 8pt, style=Bold",
+                            "@Dpi": "254",
+                            "@Weight": "13.608583880494196",
+                            "@MultiLine": "true",
+                            "@SourceExpression": "Line.FieldCaptions.Amount + ' (' + Header.FieldLookups.CurrencyCode + ')'",
+                            "@VertAlign": "Bottom",
+                            "@HorzAlign": "Right"
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "Continued_Header_Amount": {
+                    "@Name": "Continued_Header_Amount",
+                    "@ControlType": "TextBox",
+                    "@Size": "299.999878,60",
+                    "@Location": "1400.00012,100",
+                    "@Dpi": "254",
+                    "@Font": "Segoe UI, 8pt, style=Italic",
+                    "@HorzAlign": "Right",
+                    "@SourceExpression": "Line.Amount"
+                  },
+                  "Continued_Header_Caption": {
+                    "@Name": "Continued_Header_Caption",
+                    "@ControlType": "TextBox",
+                    "@Size": "150,60",
+                    "@Location": "1250,100",
+                    "@Dpi": "254",
+                    "@Font": "Segoe UI, 8pt, style=Bold, Italic",
+                    "@SourceExpression": "CurrReport.StandardCaptions.Continued"
+                  }
+                }
+              },
+              "TransFooter": {
+                "@ControlType": "TransFooter",
+                "@Name": "TransFooter",
+                "@Dpi": "254",
+                "@BackColor": "Beige",
+                "@MasterSection": "ForNAV Sales Template,TransFooter",
+                "@Signature": "abc",
+                "@Height": "90.06427",
+                "Controls": {
+                  "CompanyInformation_FieldGroups_Address4": {
+                    "@Name": "CompanyInformation_FieldGroups_Address4",
+                    "@ControlType": "TextBox",
+                    "@Size": "150,60",
+                    "@Location": "1250,0",
+                    "@Dpi": "254",
+                    "@Font": "Segoe UI, 8pt, style=Bold, Italic",
+                    "@SourceExpression": "CurrReport.StandardCaptions.Continued"
+                  },
+                  "CompanyInformation_FieldGroups_Address3": {
+                    "@Name": "CompanyInformation_FieldGroups_Address3",
+                    "@ControlType": "TextBox",
+                    "@Size": "300,60",
+                    "@Location": "1400,0",
+                    "@Dpi": "254",
+                    "@Font": "Segoe UI, 8pt, style=Italic",
+                    "@HorzAlign": "Right",
+                    "@SourceExpression": "Line.Amount"
+                  }
+                }
+              },
+              "LinesFooter": {
+                "@ControlType": "Footer",
+                "@Name": "LinesFooter",
+                "@Dpi": "254",
+                "@BackColor": "Beige",
+                "@MasterSection": "ForNAV Sales Template,LinesFooter",
+                "@Signature": "abc",
+                "@Height": "205.000092",
+                "Controls": {
+                  "TextBox5": {
+                    "@Name": "TextBox5",
+                    "@ControlType": "TextBox",
+                    "@Size": "1100,60.0002136",
+                    "@Location": "0,144.999878",
+                    "@Dpi": "254",
+                    "@Font": "Arial, 9pt, style=Italic",
+                    "@SourceExpression": "ForNAVSetup.PaymentNote"
+                  },
+                  "Shape2": {
+                    "@Name": "Shape2",
+                    "@ControlType": "Shape",
+                    "@Size": "1700,5",
+                    "@Location": "0,10",
+                    "@ShapeType": "HorzLine",
+                    "@Angle": "90",
+                    "@Stretch": "true",
+                    "@Dpi": "254",
+                    "Shape": {
+                      "@ShapeName": "Line"
+                    }
+                  },
+                  "CurrReport_Caption6": {
+                    "@Name": "CurrReport_Caption6",
+                    "@ControlType": "TextBox",
+                    "@Size": "299.999878,60",
+                    "@Location": "1399.99976,24.9999275",
+                    "@Dpi": "254",
+                    "@Font": "Segoe UI, 8pt, style=Bold",
+                    "@SourceExpression": "Header.Amount"
+                  },
+                  "CurrReport_Caption8": {
+                    "@Name": "CurrReport_Caption8",
+                    "@ControlType": "TextBox",
+                    "@Size": "300,60",
+                    "@Location": "1399.99976,84.99982",
+                    "@Dpi": "254",
+                    "@Font": "Segoe UI, 8pt",
+                    "@SourceExpression": "Header.AmountIncludingVAT-Header.Amount"
+                  },
+                  "CurrReport_Caption7": {
+                    "@Name": "CurrReport_Caption7",
+                    "@ControlType": "TextBox",
+                    "@Size": "300,60",
+                    "@Location": "1100,24.9999275",
+                    "@Dpi": "254",
+                    "@Font": "Segoe UI, 8pt, style=Bold",
+                    "@SourceExpression": "CurrReport.StandardCaptions.SubTotal"
+                  },
+                  "CurrReport_Caption9": {
+                    "@Name": "CurrReport_Caption9",
+                    "@ControlType": "TextBox",
+                    "@Size": "300,60",
+                    "@Location": "1100,145.000031",
+                    "@Dpi": "254",
+                    "@Font": "Segoe UI, 8pt, style=Bold",
+                    "@Borders": "Bottom",
+                    "@SourceExpression": "CurrReport.StandardCaptions.Total + ' (' + Header.FieldLookups.CurrencyCode + ')'"
+                  },
+                  "CompanyInformation_FieldGroups_Address0": {
+                    "@Name": "CompanyInformation_FieldGroups_Address0",
+                    "@ControlType": "TextBox",
+                    "@Size": "300,60",
+                    "@Location": "1399.99976,145.000031",
+                    "@Dpi": "254",
+                    "@Font": "Segoe UI, 8pt, style=Bold",
+                    "@Borders": "Bottom",
+                    "@SourceExpression": "Header.AmountIncludingVAT"
+                  },
+                  "CompanyInformation_FieldGroups_Address1": {
+                    "@Name": "CompanyInformation_FieldGroups_Address1",
+                    "@ControlType": "TextBox",
+                    "@Size": "300.000244,60",
+                    "@Location": "1100,84.99982",
+                    "@Dpi": "254",
+                    "@Font": "Segoe UI, 8pt",
+                    "@SourceExpression": "CurrReport.StandardCaptions.TaxAmount + (DynamicsNavDataSet.SingleVATPct == 0 ? '' : ' ' + DynamicsNavDataSet.SingleVATPct + '%')"
+                  }
+                }
+              }
+            },
+            "Fields": {
+              "DocumentNo": {
+                "@FieldName": "Document No.",
+                "@FieldNo": "3"
+              },
+              "LineNo": {
+                "@FieldName": "Line No.",
+                "@FieldNo": "4"
+              },
+              "Amount": {
+                "@FieldName": "Amount",
+                "@FieldNo": "29"
+              }
+            }
+          },
+          "VATAmountLine": {
+            "@ControlType": "DataItem",
+            "@Name": "VATAmountLine",
+            "@Dpi": "254",
+            "@Temporary": "true",
+            "@Id": "1000000001",
+            "@TotalFields": "1,6,3,2",
+            "@TotalColumns": "VATAmountLine$VATPct,VATAmountLine$LineAmount,VATAmountLine$VATAmount,VATAmountLine$VATBase",
+            "@DataItemTableView": "SORTING(\"VAT Identifier\", \"VAT Calculation Type\", \"Tax Group Code\", \"Use Tax\", Positive)",
+            "@DataItemTable": "Table290",
+            "@DataItemVarName": "VATAmountLine",
+            "Bands": {
+              "VATBody": {
+                "@ControlType": "Body",
+                "@Name": "VATBody",
+                "@BackColor": "Beige",
+                "@Dpi": "254",
+                "@Signature": "abc",
+                "@MasterSection": "ForNAV Sales Template,VATBody",
+                "@Height": "60",
+                "Controls": {
+                  "table5": {
+                    "@Name": "table5",
+                    "@ControlType": "Table",
+                    "@Size": "1700,60",
+                    "@Location": "0,0",
+                    "@Dpi": "254",
+                    "Rows": {
+                      "tableRow5": {
+                        "@Name": "tableRow5",
+                        "@ControlType": "TableRow",
+                        "@Dpi": "254",
+                        "@Weight": "0.5679012345679012",
+                        "Cells": {
+                          "Line_No5": {
+                            "@Name": "Line_No5",
+                            "@ControlType": "TableCell",
+                            "@Font": "Segoe UI, 8pt",
+                            "@Dpi": "254",
+                            "@Weight": "0.47388059701492535",
+                            "@SourceExpression": "VATAmountLine.VATIdentifier"
+                          },
+                          "Line_No6": {
+                            "@Name": "Line_No6",
+                            "@ControlType": "TableCell",
+                            "@Font": "Segoe UI, 8pt",
+                            "@Dpi": "254",
+                            "@Weight": "0.47388059701492535",
+                            "@SourceExpression": "VATAmountLine.VATPct"
+                          },
+                          "Line_No7": {
+                            "@Name": "Line_No7",
+                            "@ControlType": "TableCell",
+                            "@Font": "Segoe UI, 8pt",
+                            "@Dpi": "254",
+                            "@Weight": "0.47388059701492535",
+                            "@SourceExpression": "VATAmountLine.LineAmount"
+                          },
+                          "Line_No8": {
+                            "@Name": "Line_No8",
+                            "@ControlType": "TableCell",
+                            "@Font": "Segoe UI, 8pt",
+                            "@Dpi": "254",
+                            "@Weight": "0.47388059701492535",
+                            "@SourceExpression": "VATAmountLine.VATAmount"
+                          },
+                          "Line_No9": {
+                            "@Name": "Line_No9",
+                            "@ControlType": "TableCell",
+                            "@Font": "Segoe UI, 8pt",
+                            "@Dpi": "254",
+                            "@Weight": "0.47388059701492535",
+                            "@SourceExpression": "VATAmountLine.VATBase"
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "VATHeader": {
+                "@ControlType": "Header",
+                "@Name": "VATHeader",
+                "@BackColor": "Beige",
+                "@Dpi": "254",
+                "@Signature": "abc",
+                "@MasterSection": "ForNAV Sales Template,VATHeader",
+                "@Height": "70",
+                "Controls": {
+                  "table6": {
+                    "@Name": "table6",
+                    "@ControlType": "Table",
+                    "@Size": "1700,60",
+                    "@Location": "0,10",
+                    "@Dpi": "254",
+                    "Rows": {
+                      "tableRow6": {
+                        "@Name": "tableRow6",
+                        "@ControlType": "TableRow",
+                        "@Dpi": "254",
+                        "@Weight": "0.5679012345679012",
+                        "Cells": {
+                          "Line_Description0": {
+                            "@Name": "Line_Description0",
+                            "@ControlType": "TableCell",
+                            "@Borders": "Bottom",
+                            "@Font": "Segoe UI, 8pt, style=Bold",
+                            "@Dpi": "254",
+                            "@Weight": "0.47388059701492535",
+                            "@SourceExpression": "VATAmountLine.FieldCaptions.VATIdentifier"
+                          },
+                          "Line_Description1": {
+                            "@Name": "Line_Description1",
+                            "@ControlType": "TableCell",
+                            "@Borders": "Bottom",
+                            "@Font": "Segoe UI, 8pt, style=Bold",
+                            "@Dpi": "254",
+                            "@Weight": "0.47388059701492535",
+                            "@SourceExpression": "VATAmountLine.FieldCaptions.VATPct",
+                            "@HorzAlign": "Right"
+                          },
+                          "Line_Description2": {
+                            "@Name": "Line_Description2",
+                            "@ControlType": "TableCell",
+                            "@Borders": "Bottom",
+                            "@Font": "Segoe UI, 8pt, style=Bold",
+                            "@Dpi": "254",
+                            "@Weight": "0.47388059701492535",
+                            "@SourceExpression": "VATAmountLine.FieldCaptions.LineAmount",
+                            "@HorzAlign": "Right"
+                          },
+                          "Line_Description3": {
+                            "@Name": "Line_Description3",
+                            "@ControlType": "TableCell",
+                            "@Borders": "Bottom",
+                            "@Font": "Segoe UI, 8pt, style=Bold",
+                            "@Dpi": "254",
+                            "@Weight": "0.47388059701492535",
+                            "@SourceExpression": "VATAmountLine.FieldCaptions.VATAmount",
+                            "@HorzAlign": "Right"
+                          },
+                          "Line_Description4": {
+                            "@Name": "Line_Description4",
+                            "@ControlType": "TableCell",
+                            "@Borders": "Bottom",
+                            "@Font": "Segoe UI, 8pt, style=Bold",
+                            "@Dpi": "254",
+                            "@Weight": "0.47388059701492535",
+                            "@SourceExpression": "VATAmountLine.FieldCaptions.VATBase",
+                            "@HorzAlign": "Right"
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "VATFooter": {
+                "@ControlType": "Footer",
+                "@Name": "VATFooter",
+                "@Dpi": "254",
+                "@BackColor": "Beige",
+                "@MasterSection": "ForNAV Sales Template,VATFooter",
+                "@Signature": "abc",
+                "@Height": "60",
+                "Controls": {
+                  "table7": {
+                    "@Name": "table7",
+                    "@ControlType": "Table",
+                    "@Size": "1700,60",
+                    "@Location": "0,0",
+                    "@Dpi": "254",
+                    "Rows": {
+                      "tableRow7": {
+                        "@Name": "tableRow7",
+                        "@ControlType": "TableRow",
+                        "@Dpi": "254",
+                        "@Weight": "0.5679012345679012",
+                        "Cells": {
+                          "tableCell1": {
+                            "@Name": "tableCell1",
+                            "@ControlType": "TableCell",
+                            "@Borders": "Top",
+                            "@Font": "Segoe UI, 8pt",
+                            "@Dpi": "254",
+                            "@Weight": "0.94653669740502477"
+                          },
+                          "Line_Description7": {
+                            "@Name": "Line_Description7",
+                            "@ControlType": "TableCell",
+                            "@Borders": "Top, Bottom",
+                            "@Font": "Segoe UI, 8pt",
+                            "@Dpi": "254",
+                            "@Weight": "0.47326838354421652",
+                            "@SourceExpression": "VATAmountLine.LineAmount"
+                          },
+                          "Line_Description8": {
+                            "@Name": "Line_Description8",
+                            "@ControlType": "TableCell",
+                            "@Borders": "Top, Bottom",
+                            "@Font": "Segoe UI, 8pt",
+                            "@Dpi": "254",
+                            "@Weight": "0.47326838354421646",
+                            "@SourceExpression": "VATAmountLine.VATAmount"
+                          },
+                          "Line_Description9": {
+                            "@Name": "Line_Description9",
+                            "@ControlType": "TableCell",
+                            "@Borders": "Top, Bottom",
+                            "@Font": "Segoe UI, 8pt",
+                            "@Dpi": "254",
+                            "@Weight": "0.47326838354421652",
+                            "@SourceExpression": "VATAmountLine.VATBase"
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "Fields": {
+              "VATPct": {
+                "@FieldName": "VAT %",
+                "@FieldNo": "1"
+              },
+              "VATBase": {
+                "@FieldName": "VAT Base",
+                "@FieldNo": "2"
+              },
+              "VATAmount": {
+                "@FieldName": "VAT Amount",
+                "@FieldNo": "3"
+              },
+              "VATIdentifier": {
+                "@FieldName": "VAT Identifier",
+                "@FieldNo": "5"
+              },
+              "LineAmount": {
+                "@FieldName": "Line Amount",
+                "@FieldNo": "6"
+              },
+              "VATCalculationType": {
+                "@FieldName": "VAT Calculation Type",
+                "@FieldNo": "9"
+              },
+              "TaxGroupCode": {
+                "@FieldName": "Tax Group Code",
+                "@FieldNo": "10"
+              },
+              "UseTax": {
+                "@FieldName": "Use Tax",
+                "@FieldNo": "13"
+              },
+              "Positive": {
+                "@FieldName": "Positive",
+                "@FieldNo": "16"
+              }
+            }
+          },
+          "VATClause": {
+            "@ControlType": "DataItem",
+            "@Name": "VATClause",
+            "@Dpi": "254",
+            "@Temporary": "true",
+            "@Id": "1000000002",
+            "@DataItemTableView": "SORTING(Code)",
+            "@DataItemTable": "Table560",
+            "@DataItemVarName": "VATClause",
+            "Bands": {
+              "VATClauseBody": {
+                "@ControlType": "Body",
+                "@Name": "VATClauseBody",
+                "@BackColor": "Beige",
+                "@Dpi": "254",
+                "@Signature": "abc",
+                "@MasterSection": "ForNAV Sales Template,VATClauseBody",
+                "@Height": "60",
+                "Controls": {
+                  "Header_FieldGroups_Bill_toAddress1": {
+                    "@Name": "Header_FieldGroups_Bill_toAddress1",
+                    "@ControlType": "TextBox",
+                    "@Size": "1700,60",
+                    "@Location": "0,0",
+                    "@Dpi": "254",
+                    "@Font": "Segoe UI, 8pt, style=Italic",
+                    "@HorzAlign": "Center",
+                    "@SourceExpression": "VATClause.Description + ' ' + VATClause.Description2"
+                  }
+                }
+              }
+            },
+            "Fields": {
+              "Code": {
+                "@FieldName": "Code",
+                "@FieldNo": "1"
+              }
+            }
+          },
+          "HeaderPostText": {
+            "@ControlType": "DataItem",
+            "@Name": "HeaderPostText",
+            "@Dpi": "254",
+            "@CalcFields": "Text",
+            "@Populate": "true",
+            "@Temporary": "true",
+            "@Predeccessor": "VATClause",
+            "@Id": "1000000004",
+            "@IsVirtual": "true",
+            "@ExistsOnlyInLayout": "true",
+            "@DataItemTableView": "WHERE(Type=CONST(POST))",
+            "@DataItemTable": "Table6188537",
+            "Bands": {
+              "HeaderPostBody": {
+                "@ControlType": "Body",
+                "@Name": "HeaderPostBody",
+                "@BackColor": "Transparent",
+                "@Dpi": "254",
+                "@CanGrow": "true",
+                "@Height": "58.42",
+                "Controls": {
+                  "TextBoxHeaderPostText": {
+                    "@Name": "TextBoxHeaderPostText",
+                    "@ControlType": "TextBox",
+                    "@Size": "1700,58.42",
+                    "@Location": "0,0",
+                    "@Dpi": "254",
+                    "@VertAlign": "Top",
+                    "@HorzAlign": "Left",
+                    "@MultiLine": "true",
+                    "@SourceExpression": "HeaderPostText.Text",
+                    "@CanGrow": "true"
+                  }
+                }
+              }
+            },
+            "Fields": {
+              "Text": {
+                "@FieldName": "Text",
+                "@FieldNo": "20"
+              }
+            }
+          }
+        },
+        "Fields": {
+          "No": {
+            "@FieldName": "No.",
+            "@FieldNo": "3"
+          },
+          "Bill_toCustomerNo": {
+            "@FieldName": "Bill-to Customer No.",
+            "@FieldNo": "4"
+          },
+          "DueDate": {
+            "@FieldName": "Due Date",
+            "@FieldNo": "24"
+          },
+          "FormatRegion": {
+            "@FieldName": "Format Region",
+            "@FieldNo": "42"
+          },
+          "OrderNo": {
+            "@FieldName": "Order No.",
+            "@FieldNo": "44"
+          },
+          "Amount": {
+            "@FieldName": "Amount",
+            "@FieldNo": "60"
+          },
+          "AmountIncludingVAT": {
+            "@FieldName": "Amount Including VAT",
+            "@FieldNo": "61"
+          },
+          "VATRegistrationNo": {
+            "@FieldName": "VAT Registration No.",
+            "@FieldNo": "70"
+          },
+          "DocumentDate": {
+            "@FieldName": "Document Date",
+            "@FieldNo": "99"
+          }
+        }
+      },
+      "topMarginBand1": {
+        "@Name": "topMarginBand1",
+        "@ControlType": "TopMargin",
+        "@Dpi": "254",
+        "@Height": "200"
+      },
+      "bottomMarginBand1": {
+        "@Name": "bottomMarginBand1",
+        "@ControlType": "BottomMargin",
+        "@Dpi": "254",
+        "@Height": "200"
+      }
+    },
+    "DesignerOptions": {
+      "@ShowExportWarnings": "false"
+    },
+    "Records": {
+      "CompanyInformation": {
+        "@Table": "Company Information",
+        "@No": "79",
+        "@Name": "CompanyInformation"
+      },
+      "ForNAVSetup": {
+        "@Table": "ForNAV Setup",
+        "@No": "6188471",
+        "@Name": "ForNAVSetup",
+        "@CalcFields": "Logo",
+        "Fields": {
+          "UsePreprintedPaper": {
+            "@FieldName": "Use Preprinted Paper",
+            "@FieldNo": "15"
+          },
+          "Logo": {
+            "@FieldName": "Logo",
+            "@FieldNo": "20"
+          }
+        }
+      },
+      "BankAccount": {
+        "@Table": "Bank Account",
+        "@No": "270",
+        "@Name": "BankAccount",
+        "@Temporary": "true",
+        "@DataItemLinkReference": "Header"
+      }
+    }
+  },
+  "dataContract": {
+    "Version": 1,
+    "DataItems": {
+      "Header": {
+        "No": 112,
+        "Fields": {
+          "FormatRegion": 42,
+          "Amount": 60,
+          "AmountIncludingVAT": 61,
+          "No": 3,
+          "DueDate": 24,
+          "OrderNo": 44,
+          "VATRegistrationNo": 70,
+          "Bill_toCustomerNo": 4,
+          "DocumentDate": 99,
+          "Bill_toName": 5,
+          "Bill_toName2": 6,
+          "Bill_toAddress": 7,
+          "Bill_toAddress2": 8,
+          "Bill_toCountry_RegionCode": 87,
+          "Bill_toContact": 10,
+          "Bill_toPostCode": 85,
+          "Bill_toCounty": 86,
+          "Bill_toCity": 9
+        },
+        "FieldCaptions": {
+          "No": 3,
+          "DueDate": 24,
+          "DocumentDate": 99,
+          "OrderNo": 44,
+          "VATRegistrationNo": 70
+        },
+        "FieldLookups": {
+          "PaymentTermsDescription": {
+            "TableNo": 3,
+            "LookupNo": 5,
+            "FieldNo": 23
+          },
+          "PaymentTermsCaption": {
+            "TableNo": 3,
+            "LookupNo": -1,
+            "FieldNo": 23
+          },
+          "CustomerCaption": {
+            "TableNo": 18,
+            "LookupNo": -1,
+            "FieldNo": 2
+          }
+        },
+        "GetCalls": [
+          {
+            "BankAccount": [
+              {
+                "ResetIfNotFound": true
+              }
+            ]
+          }
+        ],
+        "Translations": [
+          "Copy",
+          "Page"
+        ],
+        "Children": [
+          {
+            "Temporary": true,
+            "DataItem": "HeaderPreText",
+            "Record": "ForNAV Text Template",
+            "DataItemView": "WHERE(Type=CONST(PRE))"
+          },
+          {
+            "Temporary": true,
+            "DataItem": "HeaderPostText",
+            "Record": "ForNAV Text Template",
+            "DataItemView": "WHERE(Type=CONST(POST))"
+          }
+        ]
+      },
+      "HeaderPreText": {
+        "No": 6188537,
+        "PopulateUsing": "Header",
+        "AutoCalcFields": [
+          20
+        ],
+        "Fields": {
+          "Text": 20
+        }
+      },
+      "Line": {
+        "No": 113,
+        "Fields": {
+          "Amount": 29,
+          "DocumentNo": 3,
+          "LineNo": 4
+        },
+        "FieldCaptions": {
+          "DocumentNo": 3,
+          "LineNo": 4
+        }
+      },
+      "VATAmountLine": {
+        "No": 290,
+        "Fields": {
+          "VATPct": 1,
+          "LineAmount": 6,
+          "VATAmount": 3,
+          "VATBase": 2,
+          "VATIdentifier": 5,
+          "VATCalculationType": 9,
+          "TaxGroupCode": 10,
+          "UseTax": 13,
+          "Positive": 16
+        },
+        "FieldCaptions": {
+          "VATIdentifier": 5,
+          "VATCalculationType": 9,
+          "TaxGroupCode": 10,
+          "UseTax": 13,
+          "Positive": 16
+        }
+      },
+      "VATClause": {
+        "No": 560,
+        "Fields": {
+          "Code": 1
+        },
+        "FieldCaptions": {
+          "Code": 1
+        }
+      },
+      "HeaderPostText": {
+        "No": 6188537,
+        "PopulateUsing": "Header",
+        "AutoCalcFields": [
+          20
+        ],
+        "Fields": {
+          "Text": 20
+        }
+      }
+    },
+    "MasterReports": [
+      "ForNAV Sales Template"
+    ],
+    "Records": {
+      "CompanyInformation": {
+        "No": 79,
+        "Fields": {
+          "Name": 2,
+          "Name2": 3,
+          "Address": 4,
+          "Address2": 5,
+          "Country_RegionCode": 36,
+          "PostCode": 30,
+          "County": 31,
+          "City": 6
+        },
+        "Params": [
+          {
+            "ResetIfNotFound": true
+          }
+        ]
+      },
+      "ForNAVSetup": {
+        "No": 6188471,
+        "AutoCalcFields": [
+          20
+        ],
+        "Fields": {
+          "UsePreprintedPaper": 15,
+          "Logo": 20
+        },
+        "Params": [
+          {
+            "ResetIfNotFound": true
+          }
+        ]
+      },
+      "BankAccount": {
+        "No": 270,
+        "Temporary": true
+      }
+    }
+  },
+  "base64Layout": "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"
+}
